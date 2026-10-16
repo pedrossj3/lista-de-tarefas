@@ -1,0 +1,128 @@
+/* fundo da página com degradê */
+body {
+ margin: 0;
+ min-height: 100vh;
+ background: linear-gradient(135deg, #6366f1, #8b5cf6);
+ font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* cartão branco central da aplicação */
+.container {
+ width: 100%;
+ max-width: 420px;
+ margin: 40px auto;
+ padding: 24px;
+ background: #ffffff;
+ color: #1f2937; /* define a cor do texto para não herdar do index.css do Vite */
+ border-radius: 12px;
+ box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+ box-sizing: border-box;
+}
+
+/* título com ícone */
+h1 {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ gap: 10px;
+ margin: 0 0 20px;
+ font-size: 1.6rem;
+ color: #4f46e5;
+}
+
+/* input e botão de adicionar lado a lado */
+.formulario {
+ display: flex;
+ gap: 8px;
+ margin-bottom: 20px;
+}
+
+.formulario input {
+ flex: 1;
+ padding: 10px;
+ border: 2px solid #e5e7eb;
+ border-radius: 8px;
+ font-size: 1rem;
+ outline: none;
+}
+
+/* destaque no input quando está selecionado */
+.formulario input:focus {
+ border-color: #6366f1;
+}
+
+/* botão de adicionar (roxo) */
+.btn-adicionar {
+ display: flex;
+ align-items: center;
+ gap: 6px;
+ padding: 10px 14px;
+ background: #6366f1;
+ color: #ffffff;
+ border: none;
+ border-radius: 8px;
+ font-size: 1rem;
+ cursor: pointer;
+}
+
+.btn-adicionar:hover {
+ background: #4f46e5;
+}
+
+/* remove os marcadores padrão da lista */
+ul {
+ list-style: none;
+ margin: 0;
+ padding: 0;
+}
+
+/* cada tarefa: texto à esquerda, botão à direita */
+li {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ margin-bottom: 8px;
+ padding: 10px 12px;
+ background: #f3f4f6;
+ border-radius: 8px;
+}
+
+/* texto da tarefa com o ícone ao lado */
+.tarefa {
+ display: flex;
+ align-items: center;
+ gap: 10px;
+ flex: 1;
+ cursor: pointer;
+}
+
+/* cores dos ícones de status */
+.icone-pendente {
+ color: #9ca3af;
+}
+
+.icone-check {
+ color: #22c55e;
+}
+
+/* tarefa concluída fica riscada e mais clara */
+.concluida {
+ text-decoration: line-through;
+ color: #9ca3af;
+}
+
+/* botão de remover (vermelho) */
+.btn-remover {
+ display: flex;
+ align-items: center;
+ padding: 8px;
+ background: transparent;
+ color: #ef4444;
+ border: none;
+ border-radius: 6px;
+ cursor: pointer;
+}
+
+.btn-remover:hover {
+ background: #fee2e2;
+}
